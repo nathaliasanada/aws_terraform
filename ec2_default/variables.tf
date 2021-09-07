@@ -30,11 +30,6 @@ variable priv_cidr_block {
   default     = "10.0.1.0/25"
 }
 
-variable pub_cidr_block {
-  type        = string
-  default     = "10.0.2.0/25"
-}
-
 variable network_name {
   type        = string
   default     = "vpc-ec2-test"
@@ -60,7 +55,7 @@ variable ami_ec2 {
 variable default_ingress {
   type = map(object({description = string, cidr_blocks = list(string)}))
   default = {
-    22 = { description = "Inbound para SSH", cidr_blocks = [ "xxxx/32" ] }
+    22 = { description = "Inbound para SSH", cidr_blocks = [ "xxxxx/32" ] }
   }
 }
 
