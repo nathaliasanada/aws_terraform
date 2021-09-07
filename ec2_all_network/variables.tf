@@ -60,7 +60,7 @@ variable ami_ec2 {
 variable default_ingress {
   type = map(object({description = string, cidr_blocks = list(string)}))
   default = {
-    22 = { description = "Inbound para SSH", cidr_blocks = [ "xxxx/32" ] }
+    22 = { description = "Inbound para SSH", cidr_blocks = [ "191.183.197.43/32" ] }
   }
 }
 
